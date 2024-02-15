@@ -2,7 +2,7 @@
 :root {
     --primary: #6244C5;
     --secondary: #FFC448;
-    --light: #FAFAFB;
+    --light: #F6F1E9 ;
     --dark: #12141D;
 }
 
@@ -105,9 +105,8 @@
 /*** Header ***/
 #home {
     margin-bottom: 6rem;
-    border-bottom: 1px solid rgb(215, 210, 210);
-    box-shadow: 1px 1px 10px rgb(215, 210, 210);
     background: url(../img/bg-header.png) left top no-repeat;
+    background-color: var(--light);
 }
 
 .typed-cursor {
@@ -262,6 +261,9 @@
 
 
 /*** Service ***/
+#service{
+    background-color: var(--light);
+}
 .service-item .bg-icon {
     width: 100px;
     height: 100px;
@@ -351,6 +353,9 @@
 
 
 /*** Testimonial ***/
+#testimonial{
+    background-color: var(--light);
+}
 .testimonial-left,
 .testimonial-right {
     position: relative;
@@ -445,3 +450,25 @@
 .testimonial-carousel .owl-dot.active::after {
     background: var(--primary);
 }
+
+/* ------------------ breake ------------  */
+.custom-shape-divider-top-1708004384 {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1708004384 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+}
+
+.custom-shape-divider-top-1708004384 .shape-fill {
+    fill: var(--light);
+}
+/* A9A9A9 */
