@@ -37,9 +37,9 @@ const App = () => {
   return (
     <ThemeProvider value={{ themeMode, lightTheme, darkTheme }}>
       <div className="w-full dark:bg-darktheme bg-[url('https://tailwindcss.com/_next/static/media/docs@tinypng.d9e4dcdc.png')] bg-cover bg-center bg-repeat-y" >
-        <div className="max-w-screen-xl mx-auto">
+        <div className="max-w-screen-xl mx-auto backdrop-blur-xl">
           {/* top  */}
-          <div className='flex justify-between '>
+          <div className='flex justify-between pt-6 pb-2 border-b-2 '>
             <div className='text-5xl font-heading mb-4 text-primary dark:text-white'>Saran</div>
             <div>
               <ThemeBtn />
