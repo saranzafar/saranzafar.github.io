@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { FaHome, FaFileAlt, FaBlog, FaEnvelope } from 'react-icons/fa';
 import { Outlet } from 'react-router-dom';
 import ThemeBtn from './components/ThemeBtn';
@@ -94,7 +94,7 @@ const App = () => {
                 </div>
 
                 <div>
-                  <button type="button" className="bg-primary text-white py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-gray hover:bg-white transition hover:border-primary hover:bg-primary hover:text-darktext transition duration-200 disabled:opacity-50 disabled:pointer-events-none dark:border-white dark:text-white dark:hover:bg-primary hover:text-darktext transition duration-200 dark:hover:border-primary">Download CV</button>
+                  <button type="button" className="bg-primary text-white py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-gray hover:bg-transparent hover:text-primary hover:border-primary dark:border-white dark:text-white dark:hover:bg-primary transition duration-300 dark:hover:border-primary">Download CV</button>
                 </div>
               </div>
 

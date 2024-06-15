@@ -3,7 +3,7 @@ import { HrzLine, Skill } from "../components/index"
 function Resume() {
     return (
         <div className='text-secondary'>
-            <span className="text-3xl font-bold mb-4 ">Resume</span>
+            <span className="text-3xl font-bold mb-4">Resume</span>
             <HrzLine />
             {/* cards  */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -24,7 +24,7 @@ function Resume() {
                         <h2 className='text-xl'>As an Internee</h2>
                         <small className=' text-gray-600'>Xactmind</small>
                     </div>
-                    <div className=' bg-purple-100 p-4 flex flex-col rounded-md gap-2 mb-4'>
+                    <div className=' bg-blue-100 p-4 flex flex-col rounded-md gap-2 mb-4'>
                         <small className=' text-gray-600'>2021-present</small>
                         <h2 className='text-xl'>As an Internee</h2>
                         <small className=' text-gray-600'>Xactmind</small>
@@ -43,7 +43,7 @@ function Resume() {
                         <h2 className='text-xl'>As an Internee</h2>
                         <small className=' text-gray-600'>Xactmind</small>
                     </div>
-                    <div className='bg-red-50 p-4 flex flex-col rounded-md gap-2 mb-4'>
+                    <div className='bg-blue-100 p-4 flex flex-col rounded-md gap-2 mb-4'>
                         <small className=' text-gray-600'>2021-present</small>
                         <h2 className='text-xl'>As an Internee</h2>
                         <small className=' text-gray-600'>Xactmind</small>

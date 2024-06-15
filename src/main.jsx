@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-import { Home, Blog, Resume, Workspace } from "./pages/index.js"
+import { Home, Blog, Resume, Workspace, Contact } from "./pages/index.js"
 
 const router = createBrowserRouter([{
   path: '/',
@@ -22,8 +22,12 @@ const router = createBrowserRouter([{
       element: <Workspace />,
     },
     {
-      path: "/blog",
+      path: "/blogs",
       element: <Blog />,
+    },
+    {
+      path: "/contact",
+      element: <Contact />,
     },
   ]
 }])

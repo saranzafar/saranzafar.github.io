@@ -1,4 +1,5 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
+import { HrzLine } from "../components/index"
 
 function Home() {
     const sliderRef = useRef(null);
@@ -28,7 +29,10 @@ function Home() {
 
     return (
         <div className='text-secondary'>
-            <h1 className="text-3xl font-bold mb-4 ">About</h1>
+            <div className=''>
+                <h1 className="text-3xl font-bold">About</h1>
+                <HrzLine className=''/>
+            </div>
             <p className="mb-4 text-accent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, vero placeat temporibus ipsa blanditiis sit aliquam, molestiae similique ipsam dolorum suscipit perspiciatis quidem quibusdam excepturi maxime corporis dolor id at.</p>
             <p className="mb-4 text-accent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
