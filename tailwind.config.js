@@ -13,10 +13,10 @@ export default {
         accent: '#475569',//grey
 
         darktheme: "#0b1120",
-        white: '#ffffff',
-        darkPrimary: '#0ea5e9',//light-neon
-        darkSecondary: '#38bdf8',//dark-neon
-        darktext: '#e5e7eb',//dark-grey
+        darkBg: "#0f172a",
+        darkSubBg: "#1e293b",
+        darkHeading: "#e7e8ea",
+        darkText: "#94a3b8",
       },
       fontFamily: {
         heading: ['Labora', 'sans-serif'],     // Default body font

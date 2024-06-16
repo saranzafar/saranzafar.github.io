@@ -20,22 +20,24 @@ const Workspace = () => {
         : projects.filter(project => project.category === selectedCategory);
 
     return (
-        <div>
-            <span className="text-3xl font-bold mb-4">Resume</span>
+        <div className='dark:text-darkHeading'>
+            <h2 className="text-3xl font-bold">Works</h2>
             <HrzLine />
+
+            <p className="mb-4 dark:text-darkText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nobis nam laborum? Voluptatem repellendus quaerat in consequatur assumenda, corrupti perspiciatis ut cupiditate numquam nemo minima asperiores aliquam a, fuga accusamus.</p>
             <div className="min-h-screen p-4">
 
-                <nav className="flex justify-end space-x-4 mb-6">
-                    <button onClick={() => setSelectedCategory('all')} className={`py-2 px-4 ${selectedCategory === 'all' ? 'text-primary' : 'text-gray-700'} transition duration-300 hover:text-primary`}>
+                <nav className="flex justify-end space-x-4 mb-6 ">
+                    <button onClick={() => setSelectedCategory('all')} className={`py-2 px-4 ${selectedCategory === 'all' ? 'text-primary dark:text-primary' : 'text-gray-700'} transition duration-300 hover:text-primary dark:text-darkHeading `}>
                         All
                     </button>
-                    <button onClick={() => setSelectedCategory('website')} className={`py-2 px-4 ${selectedCategory === 'website' ? 'text-primary' : 'text-gray-700'} transition duration-300 hover:text-primary`}>
+                    <button onClick={() => setSelectedCategory('website')} className={`py-2 px-4 ${selectedCategory === 'website' ? 'text-primary dark:text-primary' : 'text-gray-700'} transition duration-300 hover:text-primary dark:text-darkHeading `}>
                         Website
                     </button>
-                    <button onClick={() => setSelectedCategory('wordpress')} className={`py-2 px-4 ${selectedCategory === 'wordpress' ? 'text-primary' : 'text-gray-700'} transition duration-300 hover:text-primary`}>
+                    <button onClick={() => setSelectedCategory('wordpress')} className={`py-2 px-4 ${selectedCategory === 'wordpress' ? 'text-primary dark:text-primary' : 'text-gray-700'} transition duration-300 hover:text-primary dark:text-darkHeading `}>
                         Wordpress
                     </button>
-                    <button onClick={() => setSelectedCategory('other')} className={`py-2 px-4 ${selectedCategory === 'other' ? 'text-primary' : 'text-gray-700'} transition duration-300 hover:text-primary`}>
+                    <button onClick={() => setSelectedCategory('other')} className={`py-2 px-4 ${selectedCategory === 'other' ? 'text-primary dark:text-primary' : 'text-gray-700'} transition duration-300 hover:text-primary dark:text-darkHeading `}>
                         Other
                     </button>
                 </nav>
@@ -44,13 +46,13 @@ const Workspace = () => {
                     {filteredProjects.map(project => (
                         <div
                             key={project.id}
-                            className="w-full h-80 bg-white rounded-lg shadow-md overflow-hidden transform transition-all duration-500 ease-in-out opacity-0 translate-y-4"
+                            className="w-full h-80 bg-white dark:bg-darkSubBg rounded-lg shadow-md overflow-hidden transform transition-all duration-500 ease-in-out opacity-0 translate-y-4"
                             style={{ animation: 'fadeInUp 0.5s forwards', animationDelay: `${project.id * 0.1}s` }}
                         >
-                            <img src={project.imgSrc} alt={`Project ${project.id}`} className="w-full h-2/3 object-cover transition-transform duration-300 transform hover:scale-105" />
+                            <img src={project.imgSrc} alt={`Project ${project.id}`} className="w-full h-2/3 object-cover transition-transform duration-300 transform hover:scale-105 dark:opacity-75 hover:opacity-100" />
                             <div className="p-4">
                                 <h3 className="text-lg font-semibold mb-1">{project.name}</h3>
-                                <p className="text-sm text-gray-600">React, Tailwind and Node</p>
+                                <p className="text-sm text-gray-600 dark:text-darkText">React, Tailwind and Node</p>
                             </div>
                         </div>
                     ))}
