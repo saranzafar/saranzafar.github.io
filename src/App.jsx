@@ -1,13 +1,12 @@
 import { useEffect, useRef, useState } from 'react';
-import { FaHome, FaFileAlt, FaBlog, FaEnvelope } from 'react-icons/fa';
 import { Outlet } from 'react-router-dom';
 import ThemeBtn from './components/ThemeBtn';
 import { ThemeProvider } from './context/theme'
 import { Footer } from "./pages/index"
 import { Link } from 'react-router-dom';
+import { Navbar } from './components';
 
 const App = () => {
-  const navbarRef = useRef(null);
   const [themeMode, setThemeMode] = useState('light')
 
   const lightTheme = () => {
@@ -16,21 +15,6 @@ const App = () => {
   const darkTheme = () => {
     setThemeMode('dark')
   }
-  useEffect(() => {
-    const navbar = navbarRef.current;
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        navbar.classList.add('sticky-nav', 'visible');
-      } else {
-        navbar.classList.remove('visible');
-      }
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
   useEffect(() => {
     document.querySelector('html').classList.remove('light', 'dark')
     document.querySelector('html').classList.add(themeMode)
@@ -41,15 +25,15 @@ const App = () => {
       <div className="w-full dark:bg-darktheme bg-[url('/img/bg.png')] bg-cover bg-center bg-repeat-y backdrop-blur-xl" >
         <div className="max-w-screen-xl mx-auto ">
           {/* top  */}
-          <div className='flex justify-between pt-6 pb-2 border-b-2 w-auto md:px-4'>
-            <div className='text-5xl font-heading mb-4 text-primary dark:text-darkText'>Saran</div>
+          <div className='flex justify-between pt-6 pb-2 border-b-2 dark:border-b-darkText w-auto px-4 items-center'>
+            <div className='text-5xl font-heading text-primary animate-pulse dark:text-primary'>Saran</div>
             <div>
               <ThemeBtn />
             </div>
           </div>
-          <div className="flex flex-wrap md:flex-nowrap pt-20 gap-x-4">
+          <div className="flex flex-wrap md:flex-nowrap pt-20 gap-x-4 md:gap-x-2">
             {/* Left Column */}
-            <div className="w-full md:w-3/12 p-4 relative md:sticky md:top-6 md:self-start rounded-lg bg-gray-50 dark:bg-darkBg ">
+            <div className="w-full lg:w-3/12 md:w-4/12 p-4 relative md:sticky md:top-6 md:self-start rounded-lg bg-gray-50 dark:bg-darkBg ">
               <div className="flex flex-col items-center mb-10">
                 <img src="/img/saranzafar.png" alt="Profile" className="rounded-lg mb-4" />
                 <h2 className='text-4xl font-bold mb-4 text-secondary dark:text-darkHeading'>Saran Zafar</h2>
@@ -107,7 +91,7 @@ const App = () => {
                 </div>
               </div>
 
-              <div ref={navbarRef} className="block md:hidden w-full p-4 mt-4">
+              {/* <div ref={navbarRef} className="block md:hidden w-full p-4 mt-4">
                 <div className="flex justify-around">
                   <div className="group relative h-16 w-16">
                     <FaHome className="text-2xl" />
@@ -126,7 +110,7 @@ const App = () => {
                     <span className="absolute left-1/2 transform -translate-x-1/2 translate-y-8 opacity-0 group-hover:opacity-100 transition-opacity">Contact</span>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
 
             {/* Middle Column */}
@@ -137,57 +121,7 @@ const App = () => {
 
 
             {/* Right Column */}
-            <div className="hidden md:flex md:w-1/12 p-4 md:flex-col md:items-center md:space-y-4 md:sticky md:top-6 md:self-start rounded-xl gap-1 text-secondary">
-
-              <div className="group relative h-16 w-16">
-                <Link to={"/"}>
-                  <div className="group flex flex-col items-center bg-gray-100 p-2 hover:bg-primary hover:text-white dark:bg-darkSubBg dark:hover:text-white dark:text-darkHeading transition duration-200 rounded-md shadow">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-home"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /><polyline points="9 22 9 12 15 12 15 22" /></svg>
-                    <div className='font-semibold text-sm'>Home</div>
-                  </div>
-                </Link >
-              </div>
-
-              <div className="group relative h-16 w-16">
-                <Link to={"/resume"}>
-                  <div className="group flex flex-col items-center bg-gray-100 p-2 hover:bg-primary hover:text-white dark:bg-darkSubBg dark:hover:text-white dark:text-darkHeading transition duration-200 rounded-md shadow">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-notepad-text"><path d="M8 2v4" /><path d="M12 2v4" /><path d="M16 2v4" /><rect width="16" height="18" x="4" y="4" rx="2" /><path d="M8 10h6" /><path d="M8 14h8" /><path d="M8 18h5" /></svg>
-                    <div className='font-semibold text-sm'>Resume</div>
-
-                  </div>
-                </Link>
-              </div>
-
-              <div className="group relative h-16 w-16">
-                <Link to={"/works"}>
-                  <div className="group flex flex-col items-center bg-gray-100 p-2 hover:bg-primary hover:text-white dark:bg-darkSubBg dark:hover:text-white dark:text-darkHeading transition duration-200 rounded-md shadow">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-laptop"><path d="M20 16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9m16 0H4m16 0 1.28 2.55a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45L4 16" /></svg>
-                    <div className='font-semibold text-sm'>Work</div>
-
-                  </div>
-                </Link>
-              </div>
-
-              <div className="group relative h-16 w-16">
-                <Link to={"/blogs"}>
-                  <div className="group flex flex-col items-center bg-gray-100 p-2 hover:bg-primary hover:text-white dark:bg-darkSubBg dark:hover:text-white dark:text-darkHeading transition duration-200 rounded-md shadow">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-square-pen"><path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" /><path d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z" /></svg>
-                    <div className='font-semibold text-sm'>Blog</div>
-
-                  </div>
-                </Link>
-              </div>
-
-              <div className="group relative h-16 w-16">
-                <Link to={"/contact"}>
-                  <div className="group flex flex-col items-center bg-gray-100 p-2 hover:bg-primary hover:text-white dark:bg-darkSubBg dark:hover:text-white dark:text-darkHeading transition duration-200 rounded-md shadow">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-contact"><path d="M17 18a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2" /><rect width="18" height="18" x="3" y="4" rx="2" /><circle cx="12" cy="10" r="2" /><line x1="8" x2="8" y1="2" y2="4" /><line x1="16" x2="16" y1="2" y2="4" /></svg>
-                    <div className='font-semibold text-sm'>Contact</div>
-                  </div>
-                </Link>
-              </div>
-
-            </div>
+            <Navbar />
           </div>
         </div>
       </div>

@@ -17,22 +17,3 @@
     font-weight: normal;
     font-style: normal;
 }
-
-/* custom css  */
-.sticky-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: white;
-    z-index: 10;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, opacity 0.3s ease;
-    transform: translateY(-100%);
-    opacity: 0;
-}
-
-.sticky-nav.visible {
-    transform: translateY(0);
-    opacity: 1;
-}
