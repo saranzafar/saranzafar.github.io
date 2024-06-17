@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { HrzLine } from "../components/index"
 
 const projects = [
-    { id: 1, category: 'Tech', imgSrc: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ718nztPNJfCbDJjZG8fOkejBnBAeQw5eAUA&s', name: 'Blog 1' },
-    { id: 2, category: 'Coding', imgSrc: 'https://img.freepik.com/free-photo/colorful-design-with-spiral-design_188544-9588.jpg', name: 'Blog 2' },
-    { id: 3, category: 'Tech', imgSrc: 'https://images.ctfassets.net/hrltx12pl8hq/01rJn4TormMsGQs1ZRIpzX/16a1cae2440420d0fd0a7a9a006f2dcb/Artboard_Copy_231.jpg?fit=fill&w=600&h=600', name: 'Blog 3' },
-    { id: 4, category: 'other', imgSrc: 'https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg', name: 'Blog 4' },
+    { id: 1, category: 'Tech', imgSrc: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ718nztPNJfCbDJjZG8fOkejBnBAeQw5eAUA&s', name: 'Minimum specification of laptop for coding' },
+    { id: 2, category: 'Coding', imgSrc: 'https://img.freepik.com/free-photo/colorful-design-with-spiral-design_188544-9588.jpg', name: 'MERN Stact Roadmap' },
+    { id: 3, category: 'Tech', imgSrc: 'https://images.ctfassets.net/hrltx12pl8hq/01rJn4TormMsGQs1ZRIpzX/16a1cae2440420d0fd0a7a9a006f2dcb/Artboard_Copy_231.jpg?fit=fill&w=600&h=600', name: 'Most Growing industury' },
+    { id: 4, category: 'other', imgSrc: 'https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg', name: 'Best Youtube channel for learning coding' },
 ];
 
 const Blog = () => {
@@ -48,7 +48,7 @@ const Blog = () => {
                             <img src={project.imgSrc} alt={`Project ${project.id}`} className="w-full h-2/3 object-cover transition-transform duration-300 transform hover:scale-105 dark:opacity-75 hover:opacity-100" />
                             <div className="p-4">
                                 <h3 className="text-lg font-semibold mb-1">{project.name}</h3>
-                                <p className="text-sm text-gray-600 dark:text-darkText">React, Tailwind and Node</p>
+                                <p className="text-sm text-gray-600 dark:text-darkText">Comming Soon...</p>
                             </div>
                         </div>
                     ))}
