@@ -5,7 +5,7 @@ function Contact() {
         <div className="dark:text-darkHeading">
             <span className="text-3xl font-bold mb-4 ">Resume</span>
             <HrzLine />
-            <p className="mt-4 text-lg leading-6 text-secondary dark:text-darkText">Please use the form below to contact us. Thank you!</p>
+            <p className="mt-4 text-lg leading-6 text-secondary dark:text-darkText">Feel free to reach out to me through the contact form below. I look forward to connecting with you and discussing how we can collaborate on exciting projects together!</p>
             <div id="contact-us" className="overflow-hidden py-4 px-4 sm:px-6 lg:px-8 lg:py-4">
                 <div className="relative mx-auto max-w-xl">
                     <div className="text-center">
@@ -32,7 +32,7 @@ function Contact() {
                                 </div>
                             </div>
                             <div className="flex justify-end sm:col-span-2">
-                                <button type="text" className="inline-flex items-center rounded-md px-4 py-2 font-medium focus:outline-none focus-visible:ring focus-visible:ring-primary shadow-sm sm:text-sm transition-colors duration-75 text-primary border border-primary hover:text-white active:bg-purple-600 disabled:bg-sky-100 disabled:cursor-not-allowed dark:hover:bg-primary">
+                                <button type="text" className="inline-flex items-center rounded-md px-4 py-2 font-medium focus:outline-none focus-visible:ring focus-visible:ring-primary shadow-sm sm:text-sm transition-colors duration-75 text-primary border border-primary hover:text-white hover:bg-primary active:bg-purple-600 disabled:bg-sky-100 disabled:cursor-not-allowed dark:hover:bg-primary">
                                     <span>Send Message</span>
                                 </button>
                             </div>

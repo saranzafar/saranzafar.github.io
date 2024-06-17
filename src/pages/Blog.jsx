@@ -6,10 +6,6 @@ const projects = [
     { id: 2, category: 'Coding', imgSrc: 'https://img.freepik.com/free-photo/colorful-design-with-spiral-design_188544-9588.jpg', name: 'Blog 2' },
     { id: 3, category: 'Tech', imgSrc: 'https://images.ctfassets.net/hrltx12pl8hq/01rJn4TormMsGQs1ZRIpzX/16a1cae2440420d0fd0a7a9a006f2dcb/Artboard_Copy_231.jpg?fit=fill&w=600&h=600', name: 'Blog 3' },
     { id: 4, category: 'other', imgSrc: 'https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg', name: 'Blog 4' },
-    { id: 5, category: 'Tech', imgSrc: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREoRGyXmHy_6aIgXYqWHdOT3KjfmnuSyxypw&s', name: 'Blog 5' },
-    { id: 6, category: 'Coding', imgSrc: 'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg', name: 'Blog 6' },
-    { id: 7, category: 'other', imgSrc: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwGxx1DUJNuxRai0IV8G04TKWCpkcmRlkRhA&s', name: 'Blog 7' },
-    { id: 8, category: 'Tech', imgSrc: 'https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg', name: 'Blog 8' },
 ];
 
 const Blog = () => {
@@ -24,7 +20,7 @@ const Blog = () => {
             <h2 className="text-3xl font-bold">Works</h2>
             <HrzLine />
 
-            <p className="mb-4 dark:text-darkText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nobis nam laborum? Voluptatem repellendus quaerat in consequatur assumenda, corrupti perspiciatis ut cupiditate numquam nemo minima asperiores aliquam a, fuga accusamus.</p>
+            <p className="mb-4 dark:text-darkText">Dive into my blog where I share insights, tutorials, and reflections on topics ranging from web development and software engineering to digital marketing strategies and the latest trends in technology. Explore practical guides, industry insights, and thoughtful analyses that aim to inspire and educate fellow enthusiasts and professionals in the digital realm.</p>
             <div className="min-h-screen p-4">
 
                 <nav className="flex justify-end space-x-4 mb-6 ">
