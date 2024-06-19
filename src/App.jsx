@@ -46,7 +46,7 @@ const App = () => {
           </div>
           {/* small screen navbar  */}
           <div className=' lg:hidden md:hidden sm:flex sm:flex-col sticky top-20 pl-2 right-0 z-30 backdrop-blur-lg w-16 h-0 transition-all duration-600'>
-            <div className='flex justify-center items-center mb-2 text-gray-700 bg-gray-400 bg-opacity-50 rounded-full h-10 dark:text-darkHeading dark:bg-darkSubBg dark:bg-opacity-60 animate-pulse' onClick={handleSmNavClick}>
+            <div className='flex justify-center items-center mb-2 bg-opacity-80 rounded-full h-10 text-darkHeading bg-primary dark:bg-opacity-80 animate-pulse' onClick={handleSmNavClick}>
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={`lucide lucide-menu ${rotation} transform duration-200`}><line x1="4" x2="20" y1="12" y2="12" /><line x1="4" x2="20" y1="6" y2="6" /><line x1="4" x2="20" y1="18" y2="18" /></svg>
             </div>
             <Navbar className={customClassName} />
