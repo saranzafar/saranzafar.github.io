@@ -1,4 +1,5 @@
 import { HrzLine } from "../components/index"
+import { Link } from "react-router-dom"
 
 function Home() {
 
@@ -8,8 +9,8 @@ function Home() {
                 <h1 className="text-3xl font-bold dark:text-darkHeading">About</h1>
                 <HrzLine className='' />
             </div>
-            <p className="mb-4 text-accent dark:text-darkText">I am Saran Zafar, a dedicated software engineering student with a passion for computer science. Proficient in the MERN stack, HTML, CSS, C, C++, Python, and expert-level WordPress, I have designed a survey application and developed backends for YouTube and Twitter clones. I have also created numerous WordPress and responsive websites.</p>
-            <p className="mb-4 text-accent dark:text-darkText">Driven by my interest in technology, I stay updated with the latest trends through social media, news, and thorough documentation review. My proactive and innovative approach to problem-solving ensures high-quality solutions in every project I undertake.</p>
+            <p className="mb-4 text-slate-900 dark:text-darkText">I am Saran Zafar, a dedicated software engineering student with a passion for computer science. Proficient in the MERN stack, HTML, CSS, C, C++, Python, and expert-level WordPress, I have designed a survey application and developed backends for YouTube and Twitter clones. I have also created numerous WordPress and responsive websites.</p>
+            <p className="mb-4 text-slate-900 dark:text-darkText">Driven by my interest in technology, I stay updated with the latest trends through social media, news, and thorough documentation review. My proactive and innovative approach to problem-solving ensures high-quality solutions in every project I undertake.</p>
 
             <h2 className='text-2xl pb-4 font-semibold mt-10 dark:text-darkHeading'>What do i do?</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 gap-4">
@@ -58,11 +59,19 @@ function Home() {
 
                 <div className="w-full px-4 pt-5 pb-16" id="faq">
                     <div className="">
-                        <div className="flex space-x-8 w-full items-center justify-around animate-slide flex-wrap dark:bg-darkSubBg dark:rounded-lg">
-                            <img alt="Apple" className="h-20 " src="https://www.svgrepo.com/show/442910/brand-apple.svg" />
-                            <img alt="Pixar" className="h-20 " src="https://www.svgrepo.com/show/443329/brand-pixar.svg" />
-                            <img alt="GeForce" className="h-20 " src="https://www.svgrepo.com/show/443079/brand-geforce.svg" />
-                            <img alt="Ethereum" className="h-20 " src="https://www.svgrepo.com/show/443042/brand-ethereum.svg" />
+                        <div className="flex space-x-8 w-full items-center justify-around animate-slide flex-wrap dark:rounded-lg">
+                            <Link to={"https://logicexer.com/"} target="_blank" className="dark:bg-darkSubBg rounded p-2">
+                                <img alt="Saran Zafar" className="h-20 " src="/img/saran-zafar-logicexer.png" />
+                            </Link>
+                            <Link to={"https://sspkotliajk.com/"} target="_blank" className="dark:bg-darkSubBg rounded p-2">
+                                <img alt="Saran Zafar" className="h-20 " src="/img/saranzafar-ssp-kotli.png" />
+                            </Link>
+                            <Link to={"https://charchinnar.com"} target="_blank" className="dark:bg-darkSubBg rounded p-2">
+                                <img alt="Saran Zafar" className="h-20 " src="/img/saran-zafar-charchinar.png" />
+                            </Link>
+                            <Link to={"https://xactmind.com/"} target="_blank" className="dark:bg-darkSubBg rounded p-2">
+                                <img alt="Saran Zafar" className="h-20 " src="/img/saranzafar-xactmind.png" />
+                            </Link>
                         </div>
                     </div>
 
