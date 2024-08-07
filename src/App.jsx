@@ -55,9 +55,9 @@ const App = () => {
           {/* bottom  */}
           <div className="flex flex-wrap md:flex-nowrap pt-20 gap-x-4 md:gap-x-2">
             {/* Left Column */}
-            <div className="w-full lg:w-3/12 md:w-4/12 p-4 relative md:sticky md:top-6 md:self-start rounded-lg bg-gray-50 dark:bg-darkBg hover:shadow-lg transition-all duration-200 ">
+            <div className="w-full lg:w-3/12 md:w-4/12 p-4 relative md:sticky md:top-6 md:self-start rounded-lg bg-gray-50 dark:bg-darkBg hover:shadow-lg transition-all duration-200 font-medium">
               <div className="flex flex-col items-center mb-10">
-                <img src="/img/saranzafar.png" alt="Profile" className="rounded-lg mb-4 hover:shadow-lg hover:-translate-y-1 transition duration-200" />
+                <img src="img/saran-zafar.webp" alt="Profile" className="rounded-lg mb-4 hover:shadow-lg hover:-translate-y-1 transition duration-200" />
                 <h2 className='text-4xl font-bold mb-4 text-secondary dark:text-darkHeading'>Saran Zafar</h2>
                 <small className='rounded-lg bg-gray-100 p-2 mb-2 dark:bg-darkSubBg dark:text-darkText hover:bg-gray-200 hover:shadow-lg hover:-translate-y-1 transition duration-200'>Web Developer</small>
                 <div className="flex mt-4 mb-2 flex-wrap md:gap-4 justify-around w-full">
