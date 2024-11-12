@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 function Home() {
 
     return (
-        <div className='text-secondary dark:text-darkText font-sans font-medium text-lg'>
+        <div className='text-secondary dark:text-darkText font-sans font-normal text-lg'>
             <div className=''>
                 <h1 className="text-3xl font-bold dark:text-darkHeading">About</h1>
                 <HrzLine className='' />
